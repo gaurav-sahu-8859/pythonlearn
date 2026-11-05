@@ -24,8 +24,8 @@
 # logical operators(and,or,not)
 a=5
 b=7
-#          f       t
-print(not(a<4 or b>5))
+#       t      t
+print((a>4) ^ (b>5))
 
 
 # # and(&)
@@ -42,9 +42,32 @@ print(not(a<4 or b>5))
 # 0      1         1
 # 1      1         1
 
+# # Xor(^)
+# a      b        i/o
+# 0      0         0
+# 1      0         1
+# 0      1         1
+# 1      1         0
+
 
 # # not
 # a      i/o
 # 0      1
 # 1      0
 
+
+
+# bitwise oerators(&,|,~,<<,>>,^)
+# bitwise not(~)
+# ~x=-x-1 # ~-5=5-1=4
+print("bitwise not:",~-5)
+
+
+# right shift(>>)
+# x>>n=x//(2**n) # 5>>1=5//(2**1)=5//2=2
+
+print("right shift:",5>>2)
+
+# left shift(<<)
+# x<<n=x*(2**n) # 5<<1=5*(2**1)=5*2=10
+print("left shift:",5<<2)
