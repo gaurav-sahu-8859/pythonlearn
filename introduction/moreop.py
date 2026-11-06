@@ -13,6 +13,7 @@ print(z is a)
 print("a",id(a))
 print("b",id(b))
 print("z",id(z))
+print("list",type(a))
 
 
 
