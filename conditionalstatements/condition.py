@@ -57,25 +57,25 @@
 #         # code
 #     case _:
 #         # code
-# balance=500
-# print("1) withdraw \n2) check balance\n3) deposit")
-# choice=int(input("enter your choice:"))
-# # print( "choice is 1" if (choice==1)else"another choice" "choice is 2" if(choice==2) else "another choice")
+balance=500
+print("1) withdraw \n2) check balance\n3) deposit")
+choice=int(input("enter your choice:"))
+# print( "choice is 1" if (choice==1)else"another choice" "choice is 2" if(choice==2) else "another choice")
 
-# match(choice):
-#     case 1:
-#         amt=int(input("enter amount:"))#4000
-#         if(balance>=amt):
-#             balance-=amt
-#             print("withdraw:",amt,"balance:",balance)
-#         else:
-#             print("insufficient balance!")
-#     case 2:
-#         print("balance:",balance)
-#     case 3:
-#         amt=int(input("enter amount:"))
-#         balance+=amt
-#         print("balance:",balance)
+match(choice):
+    case 1:
+        amt=int(input("enter amount:"))#4000
+        if(balance>=amt):
+            balance-=amt
+            print("withdraw:",amt,"balance:",balance)
+        else:
+            print("insufficient balance!")
+    case 2:
+        print("balance:",balance)
+    case 3:
+        amt=int(input("enter amount:"))
+        balance+=amt
+        print("balance:",balance)
 
 
 
