@@ -2,23 +2,26 @@
 
 # #  0  1 2  3 4
 # l=[2,34,5,78,7]
-# # l=list([2,34,5,78,7])
-# # l.append("apple") # add from last
-# l.pop() # remove from last default or pass index number so remove by index
-# l[0]=9
-# print(l)
+# # # l=list([2,34,5,78,7])
+# # # l.append("apple") # add from last
+# # # l.pop() # remove from last default or pass index number so remove by index
+# # l[0]=9 # update by index
+# # print(l)
+# print(len(l))
 
 
-# # case1) for i in range(len(l)):
-# #             #print(i)#0,1,2,3,4
-# # case2) for i in l:
-# #             #print(i)#2,34,5,78
+# # # # case1) 
+# # for i in range(len(l)):
+# #     print(i,":",l[i])#0,1,2,3,4
+# # # # case2) 
+# # for i in l:
+# #     print(i)#2,34,5,78
 
 
 # # tuple #immutable
 # t=(2,34,5,78,7)
 # # t=tuple([2,34,5,78,7])
-# # t[0]=9 #error found
+# # # t[0]=9 #error found
 
 # # update way
 # dummy=list(t)
@@ -30,15 +33,15 @@
 # print(t)
 
 
-# set #mutable
-# s={2,34,5,2,3,78,7}
-# s=set({2,34,5,2,3,78,7})
+# # set #mutable
+# # s={2,34,5,2,3,78,7}
+# # s=set([2,34,5,2,3,78,7])
 s={"apple","banana","orange"}
 
-# frozenset
+# # frozenset
 # s=frozenset(s) #immutable
 
-# s.add("cherry")
+s.add("cherry")
 print(s)
 
 

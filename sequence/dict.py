@@ -7,9 +7,9 @@
 # for i in data:
 #     print(i,":",data[i])
 
-# print("name:",data["name"])
-# print("email:",data["email"])
-# print("password:",data["password"])
+# # print("name:",data["name"])
+# # print("email:",data["email"])
+# # print("password:",data["password"])
 
 # ----------------------------------------------------------------------------
 
@@ -24,21 +24,17 @@ dataset={
 }
 
 q=""
-name="gagan"
+name=""
 while q!="0":
     q=input("enter your query press 0 for exit:")#hi
-
-    if(q in dataset):
-
-        if(q=="whats my name" and name==""):
-            print("bot:",dataset[q])
-            name=input("enter your name:")
-        elif(name):
-            print("your name is:",name)
+    if q in dataset:
+        if q=="whats my name":
+            if name:
+                print("bot: your name is",name)
+            else:
+                print("bot:",dataset[q])
+                name=input("enter your name:")
         else:
             print("bot:",dataset[q])
-        # print(dataset[q])
-    elif(q=="0"):
-        print("exiting...")
     else:
         print("no data found")

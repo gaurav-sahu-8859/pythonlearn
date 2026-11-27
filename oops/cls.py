@@ -46,6 +46,6 @@ print(a1)
 print(a2)
 
 
-# task
-make class vehical
-make inherited class car, plain, boat
+# # task
+# make class vehical
+# make inherited class car, plain, boat
