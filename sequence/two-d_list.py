@@ -13,6 +13,8 @@ list=[
       [6,7,2],
       [8,9,5]
       ]
+
 print(list[1][1])
 list[1][1]=3
 print(list)
+

@@ -23,10 +23,10 @@ dataset={
     "whats my name":"dont know your name if you tell me then then next time i'll recognize"
 }
 
-q=None
-name=""
-while q!="exit":
-    q=input("enter your query:")#hi
+q=""
+name="gagan"
+while q!="0":
+    q=input("enter your query press 0 for exit:")#hi
 
     if(q in dataset):
 
@@ -37,7 +37,8 @@ while q!="exit":
             print("your name is:",name)
         else:
             print("bot:",dataset[q])
-        
         # print(dataset[q])
+    elif(q=="0"):
+        print("exiting...")
     else:
         print("no data found")
